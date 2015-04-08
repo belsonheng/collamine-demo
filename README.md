@@ -9,4 +9,4 @@ To start _collamine-demo_, navigate to the root of this folder and run the follo
 
         node index.js
 
-Click on _Start Demo_ button to begin.
+Click on **Start Demo** button to begin.
