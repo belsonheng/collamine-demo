@@ -1,8 +1,8 @@
-var express	= require('express'),
-    app			= express();
+var express = require('express'),
+    app = express();
 
-var server  = require('http').createServer(app),
-    path 		= require('path');
+var server = require('http').createServer(app),
+    path = require('path');
 
 app.set('port', process.env.PORT || 9002);
 app.set('views', path.join(__dirname, 'views'));
