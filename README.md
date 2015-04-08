@@ -9,4 +9,4 @@ To start _collamine-demo_, navigate to the root of this folder and run the follo
 
         node index.js
 
-Click on **Start Demo** button to begin.
+Click on **Start Demo** button to begin. It will create a new file /tmp/collamine for cron jobs to monitor.
