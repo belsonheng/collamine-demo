@@ -18,6 +18,7 @@ app.get('/', function(request, response) {
 // start the demo
 app.post('/start', function(request, response) {
   var fs = require('fs');
+  // create a tmp file for bash script to monitor via cron jobs
   fs.writeFile("/tmp/collamine", "", function(err) {
     if(err) { return console.log(err); }
     console.log("The file was saved on " + new Date().toUTCString());
