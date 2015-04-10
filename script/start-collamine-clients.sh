@@ -2,8 +2,8 @@
 FILE="/tmp/collamine"
 if [ -f $FILE ]; then
    echo "File '$FILE' Exists"
-   ruby ~/gems/collamine/test.rb
-   bash ~/git/collamine-client-python/scrapybot/run.sh
+   ssh cm07 ruby ~/gems/collamine/test.rb
+   ssh cm06 bash ~/git/collamine-client-python/scrapybot/run.sh
    echo "Removing '$FILE'"
    rm $FILE
 else
