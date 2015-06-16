@@ -1,1 +1,1 @@
-ssh cm06 bash ~/git/collamine-client-python/scrapybot/run.sh
+ssh cm06 'bash -s' < ~/git/collamine-client-python/scrapybot/run.sh
