@@ -1,2 +1,1 @@
-ssh cm07 
-ruby ~/gems/collamine/test.rb
+ssh cm07 ruby ~/gems/collamine/test.rb
