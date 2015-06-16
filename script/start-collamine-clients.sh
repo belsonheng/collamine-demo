@@ -7,7 +7,7 @@ if [ -f $FILE ]; then
    echo "Start Ruby Crawler"
    screen -S ruby -d -m ssh cm07 ruby ~/gems/collamine/test.rb
    echo "Start Python Crawler"
-   ssh -t cm06 screen -S python -d -m "bash ~/git/collamine-client-python/scrapybot/run.sh"
+   ssh -t cm06 nohup "bash ~/git/collamine-client-python/scrapybot/run.sh 2>&1 >> /tmp/python.log"
    #nohup ssh cm07 && ruby ~/gems/collamine/test.rb 2>&1 >> /tmp/ruby.log
    #nohup ssh cm06 && bash ~/git/collamine-client-python/scrapybot/run.sh 2>&1 >> /tmp/python.log
 else
