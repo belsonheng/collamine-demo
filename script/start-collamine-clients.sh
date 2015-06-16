@@ -5,7 +5,7 @@ if [ -f $FILE ]; then
    echo "Removing '$FILE'"
    yes | rm $FILE
    echo "Start Ruby Crawler"
-   screen -S ruby -d -m ssh cm07 ruby ~/gems/collamine/test.rb
+   ssh -t cm07 screen -S ruby -d -m ruby ~/gems/collamine/test.rb
    echo "Start Python Crawler"
    ssh -t cm06 nohup "bash ~/git/collamine-client-python/scrapybot/run.sh 2>&1 >> /tmp/python.log"
    #nohup ssh cm07 && ruby ~/gems/collamine/test.rb 2>&1 >> /tmp/ruby.log
